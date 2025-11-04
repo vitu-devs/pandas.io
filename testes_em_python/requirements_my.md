@@ -25,11 +25,11 @@ df = df.sort_values("id", ascending=True)
 
 1. Regra de Negocio para Nulos
 
-    1.1 A coluina "License" ele já é nula por is só nisso acabei só dando filna e transformando e nada "".
-    1.2 A "host_identity_verified" para verificar se tem confirmado o alocamento devido a isso o que for nulo é unconfirmed.
+    1.1 A coluina "License" ele já é nula por is só nisso acabei só dando filna e transformando e nada "". <br>
+    1.2 A "host_identity_verified" para verificar se tem confirmado o alocamento devido a isso o que for nulo é unconfirmed. <br>
 
 
-2. Coluna Price
+2. Coluna Price <br>
     2.1
     Primeiro fazemos a remoção do $ que consta em todos as linhas, melhor forma de ser realizado isso seria utiliza código abaixo:
 

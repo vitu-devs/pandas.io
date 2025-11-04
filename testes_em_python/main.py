@@ -36,14 +36,22 @@ df["service fee"]
 df["host_identity_verified"] = df["host_identity_verified"].fillna("unconfirmed")
 
 # %%
+df["country"] = df["country"].fillna("United States")
+# %%
+df["country code"] = df["country code"].fillna("US")
+# %%
+df["instant_bookable"] = df["instant_bookable"].fillna("Pending")
+filtro = df["instant_bookable"].replace("=", "")
+
+df.iloc[18]
+# %%
 df["NAME"] = df["NAME"].fillna("")
 df
-
 # %%
 df["price"].mean()
 # %%
 # Visualização em EXCEL
-df.to_excel("dataframe_incompleto.xlsx", index=False)
+# df.to_excel("dataframe_incompleto.xlsx", index=False)
 # %%
 # reconhemcimento de dados nulos
 df.isnull()
